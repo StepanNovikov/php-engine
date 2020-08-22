@@ -3,6 +3,20 @@
     padding: 0;
 }
 
+body, button, input[type=password], input[type=text], h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+p{
+    margin: 15px 0;
+}
+
+h1{
+    color: #576369;
+    font-size: 20px;
+}
+
 a{
     text-decoration: none;
 }
@@ -22,9 +36,10 @@ a{
 }
 
 .block{
-    padding: 40px;
+    padding: 20px;
+    margin:40px;
     background: #fff;
-    border: 1px solid #33353b;
+    border: 1px solid #eeeff2;
 }
 
 .menu {
@@ -35,6 +50,30 @@ a{
 .menu a{
     display: block;
     color: #fff;
-    padding: 10px;
+    padding: 10px 25px;
+    
+}
+
+button {
+    background: #34C0E2;
+    color: white;
+    border: 1px solid #34C0E2;
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+input[type=text], input[type=password]{
+    padding: 8px;
+    border: 1px solid #eeeff2;
+    border-radius: 8px;
+    color: #ADB6BA;
+    width: 300px;
+    outline: none;
 
 }
