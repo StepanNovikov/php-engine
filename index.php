@@ -23,6 +23,13 @@
         exit('Page 404');
     }
 
+    function message($text){
+        exit('{"message" : "'.$text.'"}');
+    }
+
+    function go($url){
+        exit('{"go" : "'.$message.'"}');
+    }
 
 
     function top($title) {
@@ -35,20 +42,21 @@
             <title>'.$title.'</title>
             <link rel="stylesheet" type="text/css" href="style.css">
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+            <script src="script.js"></script>
         </head>
         <body>
         
         <div class="wrapper">
                 <div class="menu">
-                    <a href="/">Главная</a>
-                    <a href="/login">Вход</a>
-                    <a href="/register">Регистрация</a>
+                    <a href="/php-engine/">Главная</a>
+                    <a href="/php-engine/login">Вход</a>
+                    <a href="/php-engine/register">Регистрация</a>
                 </div>
                     <div class="content">
                         <div class="block">
-
-
-                
+           
         ';
     }
 
@@ -60,13 +68,6 @@
             </body>
             </html>';
     }
-
-    
-
-
-
-
-
 
 
 ?>
